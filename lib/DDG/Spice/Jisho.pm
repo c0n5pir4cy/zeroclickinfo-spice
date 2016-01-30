@@ -20,7 +20,10 @@ spice to => 'http://jisho.org/api/v1/search/words?keyword=$1';
 triggers end => "英語で","日本語で","in japanese", "in english";
 
 # Handle statement
-handle remainder => sub {
+handle query_lc => sub {
+    print $_;
+#    return unless $_ =~ /(英語で|日本語で|in japanese|in english)$/i;
+     $_ =~ s/(英語で|日本語で| in japanese| in english)$//g;
     print $_;
     # Query is in $_...if you need to do something with it before returning
     return $_;
