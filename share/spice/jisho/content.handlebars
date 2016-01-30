@@ -6,10 +6,12 @@
 {{#senses}}
     
     <li>
-        <div class="zci__jisho__part-of-speech">{{ this.parts_of_speech }}</div>
-        {{#this.english_definitions}}
-        <div class="zci__jisho__definition">{{ this }}</div>
-        {{/this.english_definitions}}
+        <div class="zci__jisho__part-of-speech">{{ key }}</div>
+        <div class="zci__jisho__definition">
+        {{#value}}
+            {{ this }};
+        {{/value}}
+        </div>
     </li>
     
 {{/senses}}
