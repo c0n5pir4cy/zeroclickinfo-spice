@@ -1,0 +1,19 @@
+<h3>
+    <span class="zci__jisho__word text--primary">{{japanese}} ({{reading}})</span>
+    <span class="zci__jisho__pronunciation"></span>
+</h3>
+<ul>
+{{#senses}}
+    
+    <li>
+        <div class="zci__jisho__part-of-speech">{{ this.parts_of_speech }}</div>
+        {{#this.english_definitions}}
+        <div class="zci__jisho__definition">{{ this }}</div>
+        {{/this.english_definitions}}
+    </li>
+    
+{{/senses}}
+</ul>
+<div class="zci__jisho__links">
+    <span class="zci__jisho__attribution  tx-clr--lt2  t-s">{{meta.attributionText}}</span>
+</div>

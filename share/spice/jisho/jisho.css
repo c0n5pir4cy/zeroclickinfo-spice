@@ -1,4 +1,36 @@
-.zci--jisho {
-
+.zci--jisho ul {
+    margin-bottom: 0.25em;
+    display: table;
 }
 
+.zci--jisho ul li {
+    display: table-row;
+}
+
+.zci--jisho .zci__jisho__definition {
+    overflow: hidden;
+    display: table-cell;
+}
+
+.zci--jisho .zci__more-at {
+    display: inline-block;
+}
+
+.zci--jisho .zci__jisho__links {
+    padding-bottom: 0.37em;
+}
+
+.zci--jisho .zci__jisho__word {
+    font-weight: 600;
+}
+
+.zci__jisho__part-of-speech {
+    font-style: italic;
+    padding-right: 1em;
+    display: table-cell;
+    min-width: 1em;
+}
+
+.zci--jisho .play-btn__err{
+    margin-left: 0.75em;
+}
